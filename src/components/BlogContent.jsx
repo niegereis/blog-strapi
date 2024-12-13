@@ -83,13 +83,13 @@ const BlogContent = ({ blogs }) => {
             <div>
               <img
                 className="p-2 w-32 h-32 rounded-full mx-auto object-cover"
-                src={`http://localhost:1337/${blog.authorImg.url}`}
+                src={`http://localhost:1337/${blog.author.authorImg.url}`}
               />
               <h1 className="font-bold text-2xl text-center text-gray-900 pt-3">
-                {blog.authorName}
+                {blog.author.name}
               </h1>
               <p className="text-center text-gray-900 font-medium">
-                {blog.authorDescription}
+                {blog.author.authorDescription}
               </p>
             </div>
           </div>

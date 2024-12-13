@@ -4,7 +4,9 @@ import useFetch from './hooks/useFetch';
 
 function App() {
   let { loading, data, error } = useFetch(
-    'http://localhost:1337/api/blogs?populate=*',
+    // 'http://localhost:1337/api/blogs?populate=*',
+    // 'http://localhost:1337/api/article-contents?populate=*',
+    'http://localhost:1337/api/article-contents?populate[author][populate]=authorImg&populate=coverImage',
   );
 
   if (loading) return <p>Loading...</p>;

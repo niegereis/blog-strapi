@@ -62,7 +62,7 @@ const Blogs = ({ blogs }) => {
                 <div className="p-8">
                   <h3 className="font-bold text-2xl my-1">{blog.blogTitle}</h3>
                   <p className="text-gray-600 text-xl">
-                    {blog.blogDescripition}
+                    {blog.blogDescription}
                   </p>
                 </div>
               </div>

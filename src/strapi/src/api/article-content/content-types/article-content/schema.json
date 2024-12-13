@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_contents",
+  "info": {
+    "singularName": "article-content",
+    "pluralName": "article-contents",
+    "displayName": "ArticleContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogTitle": {
+      "type": "string"
+    },
+    "blogDescription": {
+      "type": "text"
+    },
+    "blogContent": {
+      "type": "blocks"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

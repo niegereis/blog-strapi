@@ -51,7 +51,6 @@ const NavBar = () => {
             className="w-[28px] h-[28px] 
             object-contain mr-10"
           />
-          /
         </div>
       </div>
 
